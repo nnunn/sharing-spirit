@@ -1,0 +1,18 @@
+= render "common/branding"
+.container-wrap.filters
+   .container
+      .row
+         %ul
+            %li
+               %a{:href => "#about"} Ceremony
+            %li
+               %a{:href => "#contact"} Interviews
+            %li
+               %a{:href => "#contact"} Residential Schools 
+.container-wrap.pane
+   .container
+      .row
+         %div#video-container
+            - @videos.each do |video|
+               %div.video-card
+                  = link_to video.title, video_path(video), :class => "video-link"
