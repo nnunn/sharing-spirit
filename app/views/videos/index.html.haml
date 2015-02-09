@@ -1,16 +1,7 @@
-= render "common/branding"
-.container-wrap.pane
+.container-wrap
    .container
-      .row
-         %ul
-            %li
-               %a{:href => "#about"} Ceremony
-            %li
-               %a{:href => "#contact"} Interviews
-            %li
-               %a{:href => "#contact"} Residential Schools 
-      .row
-         %div#video-container
-            - @videos.each do |video|
-               .video-card{:class =>"#{video.title}"}
-                  = link_to video.title, video_path(video), :class => "video-link"
+      %h2 Videos
+      - @videos.each do |video|
+         = link_to video.title, video_path(video), :class => "video-link"
+         = link_to 'Edit', edit_video_path(video)
+         = link_to 'Delete', video_path(video), method: :delete, data: { confirm: 'Are you sure you want to delete this video?' }

@@ -1,1 +1,16 @@
-Well HI there
+= render "common/branding"
+.container-wrap.pane
+   .container
+      .row
+         #filters
+            %button{"data-filter" => "*", "value" => "show all"}
+               show all
+            %button{"data-filter" => ".interview", "value" => "interview"}
+               interviews
+            %button{"data-filter" => ".finished", "value" => "finished"}
+               finished
+      .row
+         %div#video-container
+            - @videos.each do |video|
+               .video-card{"class" =>"#{video.video_type}"}
+                  = link_to video.title, video_path(video), :class => "video-link"
