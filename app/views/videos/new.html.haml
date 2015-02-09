@@ -1,14 +1,21 @@
-%h1 Add Video
-= form_for :video, url: videos_path do |f|
- %ul
-  %li
-   = f.label :title
-   = f.text_field :title, :required => true
-  %li
-   = f.label :url
-   = f.text_field :url, :required => true
-  %li
-   = f.label :description
-   = f.text_area :description, :as => :text, :required => false, :input_html => {:rows => 10}  
- .form-actions
-  = f.submit :class =>'btn btn-primary'
+.container
+  %h2 Add Video
+  = form_for :video, :html => {:class => 'add-form'}, url: videos_path do |f|
+    %ul
+      %li
+        = f.label :title
+        = f.text_field :title, :required => true
+      %li
+        = f.label "Vimeo Id"
+        = f.text_field :vimeoid, :required => true
+      %li
+        = f.label :type
+        = f.text_field :type, :required => true
+      %li
+        = f.label :subject
+        = f.text_field :subject, :required => true
+      %li
+        = f.label :description
+        = f.text_area :description, :as => :text, :required => false, :input_html => {:rows => 10}  
+      .form-actions
+        = f.submit :class =>'btn btn-primary'
