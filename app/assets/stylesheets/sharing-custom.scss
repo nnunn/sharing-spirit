@@ -67,30 +67,25 @@ nav{
 	line-height: 40px;
 	color: #3a3d48;
 }
-.filters{
-	background:url("transition-bg.png") repeat-x;
+.pane{
+	background:url("transition-bg.png") #1c223a repeat-x center top;
 	margin-top: 5px;
-	padding: 40px 0 10px 0;
+	padding-top: 70px;
 	font-family: 'PT Sans Narrow', sans-serif;
 }
-.filters ul{
+.pane ul{
 	padding-left: 0;
 }
-.filters ul>li{
+.pane ul>li{
 	list-style: none;
 }
-.filters ul>li>a{
+.pane ul>li>a{
 	float: left;
 	
 	color: #3a3d48;
 	display: block;
 	padding: 5px 9px;
 	margin-right: 3px;
-}
-.pane{
-	background-color: #3a3d48;
-
-	padding-top: 30px;
 }
 .video-card{
 	width: 280px;
@@ -107,4 +102,17 @@ nav{
 }
 .video-link:hover{
 	background-color: #999;
+}
+.add-form li{
+	list-style: none;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+.add-form label{
+	width: 120px;
+	text-align: right;
+	margin-right: 5px;
+}
+.add-form .btn{
+	margin-left: 180px;
 }
