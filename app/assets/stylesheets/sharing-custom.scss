@@ -1,5 +1,5 @@
 body{
-	background:url("fresh_snow.png");
+	background: asset-data-url("fresh_snow.png");
 	font-family: 'Playfair Display', serif;
 }
 .mynav{
@@ -12,7 +12,7 @@ body{
 .mynav>li>a{
 	padding: 10px 20px;
 	color: #3a3d48;
-	background-image:url("link-bg.png");
+	background-image:asset-data-url("link-bg.png");
 	border-width: 1px 0;
 	display: block;
 	float: left;
@@ -76,7 +76,7 @@ nav{
 	padding: 55px 20px;
 	display: block;
 	margin-top: 0px;
-	background-image:url("link-bg.png");
+	background-image:asset-data-url("link-bg.png");
 }
 .tagline{
 	margin-top: 0px;
@@ -93,7 +93,7 @@ nav{
 	color: #3a3d48;
 }
 .pane{
-	background:url("transition-bg.png") #1c223a repeat-x center top;
+	background:asset-data-url("transition-bg.png") #1c223a repeat-x center top;
 	margin-top: 5px;
 	padding: 70px 0;
 	font-family: 'PT Sans Narrow', sans-serif;
@@ -151,7 +151,7 @@ nav{
 }
 .video-info{
 	padding: 30px;
-	background-image:url("link-bg.png");
+	background-image:asset-data-url("link-bg.png");
 }
 .video-container p{
 	font-size: 17px;
