@@ -8,4 +8,11 @@ $( document ).ready(function() {
   		var filterValue = $(this).attr('data-filter');
   		$container.isotope({ filter: filterValue });
 	});
+	$('.mynav a').on('click', function() {
+		var link = this;
+    	$.smoothScroll({
+      		scrollTarget: link.hash
+    	});
+    	return false;
+  	});
 });
