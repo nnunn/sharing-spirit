@@ -3,14 +3,22 @@
    .container
       .row
          #filters
-            %button{"data-filter" => "*", "value" => "show all"}
+            %a{"data-filter" => "*", "href" => "#"}
                show all
-            %button{"data-filter" => ".interview", "value" => "interview"}
+            %a{"data-filter" => ".interview", "href" => "#"}
                interviews
-            %button{"data-filter" => ".finished", "value" => "finished"}
+            %a{"data-filter" => ".finished", "href" => "#"}
                finished
       .row
          %div#video-container
             - @videos.each do |video|
                .video-card{"class" =>"#{video.video_type}"}
                   = link_to video.title, video_path(video), :class => "video-link"
+.container-wrap.pane2
+   .container
+      .row
+         %h2 About Sharing Spirit
+.container-wrap.pane3
+   .container
+      .row
+         %h2 Partners

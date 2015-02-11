@@ -4,7 +4,7 @@ $( document ).ready(function() {
   		itemSelector: '.video-card',
   		layoutMode: 'fitRows'
 	})
-	$('#filters').on( 'click', 'button', function() {
+	$('#filters').on( 'click', 'a', function() {
   		var filterValue = $(this).attr('data-filter');
   		$container.isotope({ filter: filterValue });
 	});

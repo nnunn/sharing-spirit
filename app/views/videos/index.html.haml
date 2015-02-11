@@ -1,7 +1,9 @@
 .container-wrap
-   .container
-      %h2 Videos
-      - @videos.each do |video|
-         = link_to video.title, video_path(video), :class => "video-link"
-         = link_to 'Edit', edit_video_path(video)
-         = link_to 'Delete', video_path(video), method: :delete, data: { confirm: 'Are you sure you want to delete this video?' }
+	.container
+		%h2 Videos
+		%ol.video-update-list
+			- @videos.each do |video|
+				%li
+					= link_to video.title, video_path(video), :class => "video-title"
+					= link_to 'Edit', edit_video_path(video), :class => "video-modify"
+					= link_to 'Delete', video_path(video), :class => "video-modify", method: :delete, data: { confirm: 'Are you sure you want to delete this video?' }
