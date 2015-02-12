@@ -103,7 +103,6 @@ GEM
     rake (10.4.2)
     rdoc (4.2.0)
       json (~> 1.4)
-    ruby-oembed (0.8.12)
     ruby_parser (3.6.4)
       sexp_processor (~> 4.1)
     sass (3.2.19)
@@ -149,11 +148,9 @@ DEPENDENCIES
   haml-rails (~> 0.8)
   jbuilder (~> 2.0)
   jquery-rails
-  json
   pg
   rails
   rails_12factor
-  ruby-oembed
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring
