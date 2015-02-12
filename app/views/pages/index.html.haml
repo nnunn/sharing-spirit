@@ -1,19 +1,20 @@
 = render "common/branding"
 .container-wrap.pane
    .container
-      .row
+      .row#videos
          #filters
-            %a{"data-filter" => "*", "href" => "#"}
+            %a{"data-filter" => "*"}
                show all
-            %a{"data-filter" => ".interview", "href" => "#"}
+            %a{"data-filter" => ".interview"}
                interviews
-            %a{"data-filter" => ".finished", "href" => "#"}
+            %a{"data-filter" => ".finished"}
                finished
       .row
          %div#video-container
             - @videos.each do |video|
                .video-card{"class" =>"#{video.video_type}"}
-                  = link_to video.title, video_path(video), :class => "video-link"
+                  = link_to video.title, video_path(video)
+                  = image_tag "video-thumbs/"+video.vimeoid+".jpg", :alt => "video thumb"
 .container-wrap.pane2
    .container
       .row#about
