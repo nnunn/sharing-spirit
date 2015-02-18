@@ -12,9 +12,12 @@
       .row
          %div#video-container
             - @videos.each do |video|
-               %a.video-card{"class" =>"#{video.video_type}"}
-                  = link_to video.title, video_path(video)
-                  = image_tag "video-thumbs/"+video.vimeoid+".jpg", :alt => "video thumb"
+               - vid = VideoInfo.new("https://vimeo.com/"+video.vimeoid)
+               .video-card{"class" =>"#{video.video_type}"}
+                  = image_tag vid.thumbnail_large, :alt => video.title+" thumb"
+                  = link_to video_path(video) do
+                     %span
+                        = vid.title
 .container-wrap.pane2
    .container
       .row#about

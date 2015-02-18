@@ -30,6 +30,9 @@ gem 'spring',        group: :development
 
 gem 'rails_12factor'
 
+gem 'video_info'
+
+gem 'seed_dump'
 
 # Use ActiveModel has_secure_password
 

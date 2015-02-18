@@ -94,7 +94,7 @@ nav{
 	color: #3a3d48;
 }
 .pane{
-	background:asset-data-url("transition-bg.png") #1c223a repeat-x center top;
+	background:asset-data-url("trans1.jpg") #04325d repeat-x center top;
 	margin-top: 5px;
 	padding: 70px 0;
 	font-family: 'PT Sans Narrow', sans-serif;
@@ -114,31 +114,55 @@ nav{
 	margin-right: 3px;
 }
 .pane2{
-	background-color: #fed804;
+	background:asset-data-url("trans2.jpg") #fbcc0f repeat-x center top;
 }
 .pane3 h2{
 	color: #fff;
 }
 .pane3{
 	background-color: #750d05;
-}
-.pane, .pane2, .pane3, .pane4{
+} 
+.pane2, .pane3, .pane4{
 	height: 500px;
+	padding: 50px 0;
 }
 .video-card{
-	width: 280px;
-	background-color: #000;
-	margin-left: 5px;
-	margin-bottom: 5px;
+	width: 380px;
+	background-color: #333;
+	margin-left: 0px;
+	margin-bottom: 0px;
 }
-.video-link{
+.video-card img{
+	width: 380px;
+	height: 214px;
+	border: solid 3px #fff;
+}
+.video-card a{
 	display: block;
+	height: 214px;
+	width: 380px;
 	padding: 20px;
-	font-size: 30px;
+	font-size: 18px;
+	position: absolute;
+	top:0;
 	font-family: 'Playfair Display', serif;
+	text-align: center;
+	text-decoration: none;
 }
-.video-link:hover{
-	background-color: #999;
+.video-card a span{
+	display: none;
+	height: 150px;
+	width: 150px;
+	color: #000;
+	margin-top: 12px;
+	margin-left: 100px;
+	padding: 20px 10px;
+
+}
+.video-card a:hover span{
+	display: block;
+	text-decoration: none;
+	background: asset-data-url("fresh_snow.png");
 }
 .video-container{
 	margin-top: -80px;
