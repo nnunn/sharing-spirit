@@ -12,7 +12,7 @@
       .row
          %div#video-container
             - @videos.each do |video|
-               .video-card{"class" =>"#{video.video_type}"}
+               %a.video-card{"class" =>"#{video.video_type}"}
                   = link_to video.title, video_path(video)
                   = image_tag "video-thumbs/"+video.vimeoid+".jpg", :alt => "video thumb"
 .container-wrap.pane2
