@@ -1,12 +1,14 @@
 = render "common/smbranding"
 .container.video-container
-	.video-wrapper.col-md-10
+	- vid = VideoInfo.new("https://vimeo.com/"+@video.vimeoid)
+	%h2.video-title
+		= vid.title
+	.video-wrapper.col-md-12
 		%iframe{:src => "//player.vimeo.com/video/"+@video.vimeoid, :allowfullscreen => "true"}
-	.social.col-md-2
-		=link_to "Share on Facebook", "https://www.facebook.com/sharer/sharer.php?u=https://vimeo.com/"+@video.vimeoid
 	.video-info.col-md-12
 		%p
-			= @video.description
+			= vid.description.html_safe
+			=link_to "Share on Facebook", "https://www.facebook.com/sharer/sharer.php?u=https://vimeo.com/"+@video.vimeoid
 
 
 
