@@ -1,7 +1,27 @@
+.container-wrap.mv-brand
+   .container
+      .col-xs-1
+         =link_to image_tag("logo-sm.png", :alt => "Sharing Spirit Logo", :class => "sm-logo"), root_path 
+      .col-xs-5
+         %a{:href => "#top"}
+            %h1.sm Sharing <span>Spirit</span>
+      .col-xs-6
+         %ul.mynav#sm-nav
+            %li
+               %a{:href => "#top"} TOP
+            %li
+               %a{:href => "#videos"} Videos
+            %li
+               %a.about{:href => "#about"} About
+            %li
+               %a{:href => "#partners"} Partners
+            %li
+               %a{:href => "#contact"} Contact
 = render "common/branding"
 .container-wrap.pane
    .container
-      .row#videos
+      .row
+         %a{:class => "anchor", :id => "videos"}
          #filters
             %a{"data-filter" => "*"}
                show all
@@ -20,13 +40,17 @@
                         = vid.title
 .container-wrap.pane2
    .container
-      .row#about
+      .row
+         %a{:class => "anchor", :id => "about"}
          %h2 About Sharing Spirit
 .container-wrap.pane3
-   .container#partners
+   .container
       .row
+         %a{:class => "anchor", :id => "partners"}
          %h2 Partners
+         =image_tag "people.svg", :alt => "partners drawing", :class => "people"
 .container-wrap.pane4
-   .container#contact
+   .container
       .row
+         %a{:class => "anchor", :id => "contact"}
          %h2 Contact

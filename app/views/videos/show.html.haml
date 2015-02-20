@@ -4,7 +4,7 @@
 	%h2.video-title
 		= vid.title
 	.video-wrapper.col-md-12
-		%iframe{:src => "//player.vimeo.com/video/"+@video.vimeoid, :allowfullscreen => "true"}
+		%iframe{:src => "//player.vimeo.com/video/"+@video.vimeoid+"?title=0&amp;byline=0&amp;portrait=0", :allowfullscreen => "true"}
 	.video-info.col-md-12
 		%p
 			= vid.description.html_safe

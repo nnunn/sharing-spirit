@@ -7,11 +7,22 @@ $( document ).ready(function() {
   		var filterValue = $(this).attr('data-filter');
   		$container.isotope({ filter: filterValue });
 	});
-	$('#lg-nav a').on('click', function() {
+	$('#lg-nav a, .mv-brand a').on('click', function() {
 		var link = this;
     	$.smoothScroll({
-      		scrollTarget: link.hash
+          speed: 200,
+      		scrollTarget: link.hash,
     	});
     	return false;
   	});
+  $('#video-container').waypoint({
+    handler: function(direction) {
+        if (direction === 'down'){
+          $( ".mv-brand" ).show();
+        }else{
+          $( ".mv-brand" ).hide();
+        }
+    },
+     offset: '40%'
+  })
 });

@@ -1,6 +1,24 @@
+$yellow: #fbcc0f;
+$red: #750d05;
+$blue: #04325d;
+$white: #fff;
+$black: #000;
+
 body{
 	background: asset-data-url("fresh_snow.png");
 	font-family: 'Playfair Display', serif;
+}
+a:visited{
+	color: #000;
+}
+a{
+	text-decoration: none;
+}
+a:hover, a:visited, a:link, a:active{
+	text-decoration: none;
+}
+.mn-brand{
+	padding: 20px 0;
 }
 .mynav{
 	padding: 0;
@@ -25,15 +43,34 @@ body{
 	color: #000;
 }
 #sm-nav{
-	margin-top: 34px;
+	margin-top: 40px;
 	margin-left: 115px;
 }
+.mv-brand{
+	display: none;
+	padding-top: 10px;
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	height: 120px;
+	background: asset-data-url("fresh_snow.png");
+}
+.mv-brand #sm-nav{
+	margin-left: 70px;
+	}
 #sm-nav>li>a{
 	font-size: 17px;
 	margin-right: 25px;
 }
 #sm-nav>li>a.last{
 	margin-right: 0;
+}
+a.anchor{
+	display: block; 
+	position: relative; 
+	top: -150px; 
+	visibility: hidden;
 }
 .full-title{
 	border: 2px solid #3a3d48;
@@ -54,7 +91,7 @@ body{
 h1{
 	font-size: 90px;
 	font-family: 'Playfair Display', serif;
-	color:#3a3d48;
+	color:$red;
 	border-top: 1px solid #3a3d48;
 	padding-top: 30px;
 	text-align: center;
@@ -68,7 +105,7 @@ h1.sm{
 	border: none;
 	padding: 0;
 	text-align: left;
-	padding-left: 30px;
+	padding-left: 0px;
 	margin-top: 10px;
 }
 nav{
@@ -82,7 +119,7 @@ nav{
 	background-image:asset-data-url("link-bg.png");
 }
 .bg{
-	background-image:asset-data-url("link-bg.png");
+	
 	height: 400px;
 }
 h2.video-title{
@@ -105,10 +142,10 @@ h2.video-title{
 .tagline>em{
 	font-size: 35px;
 	line-height: 40px;
-	color: #3a3d48;
+	color: $blue;
 }
 .pane{
-	background:asset-data-url("trans1.jpg") #04325d repeat-x center top;
+	background:asset-data-url("trans1.jpg") $blue repeat-x center top;
 	margin-top: 5px;
 	padding: 50px 0;
 	font-family: 'PT Sans Narrow', sans-serif;
@@ -127,16 +164,19 @@ h2.video-title{
 	margin-right: 3px;
 }
 .pane2{
-	background:asset-data-url("trans2.jpg") #fbcc0f repeat-x center top;
+	background:asset-data-url("trans2.jpg") $yellow repeat-x center top;
 }
 .pane3 h2{
-	color: #fff;
+	color: $white;
 }
 .pane3{
-	background-color: #750d05;
+	background-color: $red;
 } 
+.pane4{
+	background-color: $black;
+}
 .pane2, .pane3, .pane4{
-	height: 500px;
+	height: 800px;
 	padding: 50px 0;
 }
 .video-card{
@@ -148,8 +188,9 @@ h2.video-title{
 .video-card img{
 	width: 380px;
 	height: 214px;
-	border: solid 3px #fff;
+	border: solid 3px $white;
 }
+
 .video-card a{
 	display: block;
 	height: 214px;
@@ -238,4 +279,11 @@ h2.video-title{
 }
 .add-form .btn{
 	margin-left: 180px;
+}
+.people{
+	width: 90%;
+	float: right;
+	-webkit-filter:invert(1);
+	opacity:0.8;
+	margin-top: -100px;
 }

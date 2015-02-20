@@ -2,13 +2,14 @@
    .container
       .row.sm-brand
          .col-xs-1
-            =link_to image_tag("logo-sm.png", :alt => "Sharing Spirit Logo", :class => "sm-logo"), root_path 
+            =link_to image_tag("logo-sm.png", :alt => "Sharing Spirit Logo", :class => "sm-logo", :"data-no-turbolink"=>true), root_path 
          .col-xs-5
-            %h1.sm Sharing <span>Spirit</span>
+            %a{:href => "/", :"data-no-turbolink"=>true}
+               %h1.sm Sharing <span>Spirit</span>
          .col-xs-6
             %ul.mynav#sm-nav
                %li
-                  = link_to "Home", root_path
+                  = link_to "Home", root_path, :"data-no-turbolink"=>true
                %li
                   %a{:href => "/#videos"} Videos
                %li
