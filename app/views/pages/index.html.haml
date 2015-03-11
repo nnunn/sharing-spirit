@@ -38,7 +38,7 @@
                   - vthumb[0..3] = "https"
                   = image_tag vthumb, :alt => video.title+" thumb"
                   = link_to video_path(video) do
-                     %span
+                     %span{"class" =>"#{video.video_type}"}
                         = vid.title
 .container-wrap.pane2
    .container

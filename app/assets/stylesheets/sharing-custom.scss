@@ -216,8 +216,19 @@ h2.video-title{
 .video-card a:hover span{
 	display: block;
 	text-decoration: none;
-	background: asset-data-url("fresh_snow.png");
+	background-color: $white;
 }
+.video-card a:hover span.blue{
+	background-color: $blue;
+	color:  $white;
+	}
+.video-card a:hover span.red{
+	background-color: $red;
+	color:  $white;
+	}
+.video-card a:hover span.yellow{
+	background-color: $yellow;
+	}
 .video-container{
 	margin-top: -280px;
 	}
