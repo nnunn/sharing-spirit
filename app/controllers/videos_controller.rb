@@ -5,7 +5,7 @@ class VideosController < ApplicationController
   http_basic_authenticate_with name: "modifier", password: "SharingVide0s", except: :show
 	
   def index
-    	@videos = Video.order(:title)
+    	@videos = Video.all
   	end
 	def new
 		@video = Video.new
