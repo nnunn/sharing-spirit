@@ -34,7 +34,9 @@
             - @videos.each do |video|
                - vid = VideoInfo.new("https://vimeo.com/"+video.vimeoid)
                .video-card{"class" =>"#{video.video_type}"}
-                  = image_tag vid.thumbnail_large, :alt => video.title+" thumb"
+                  - vthumb = vid.thumbnail_large
+                  - vthumb[0..3] = "https"
+                  = image_tag vthumb, :alt => video.title+" thumb"
                   = link_to video_path(video) do
                      %span
                         = vid.title
