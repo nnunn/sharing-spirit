@@ -1,6 +1,9 @@
 .container-wrap
 	.container
 		%h2 Videos
+		%ul
+			%li
+				= link_to "Add New Video", new_video_path	
 		%ol.video-update-list
 			- @videos.each do |video|
 				%li
