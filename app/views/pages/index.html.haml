@@ -44,13 +44,32 @@
    .container
       .row
          %a{:class => "anchor", :id => "about"}
-         %h2 About Sharing Spirit
+         .col-md-5
+         .about-text.col-md-7
+            %h2 About Sharing Spirit
+            %p 
+               Sharing Spirit is an oral history and storytelling project that works with Aboriginal peoples of all ages to share knowledge and tell stories through digital filmmaking. The project was started by Edmonton-based filmmaker Jason Gondziola and Cree Elder Francis Whiskeyjack. Through this project, youth interviewed Elders, Knowledge Keepers and artists on a number of subjects and created short documentary films from some of these interviews.
+            %p 
+               The project ran principally at amiskwaciy Academy with additional interviews at Prince Charles School, O’Leary Catholic High School, St. Joseph High School and St. Francis Xavier Catholic High School in Edmonton, Alberta, as well as Peace Regional Outreach Campus in Peace River, Alberta.
+            %p 
+               In this project we connect Aboriginal peoples from different generations, nations and communities to share their knowledge, wisdom and insight. These conversations are to encourage young people to learn not only from their elders, but from each other as well. Our hope is that, through this website, you will be able to learn from them, too.
 .container-wrap.pane3
    .container
       .row
          %a{:class => "anchor", :id => "partners"}
-         %h2 Partners
-         =image_tag "people.svg", :alt => "partners drawing", :class => "people"
+         .partners-text.col-md-2
+            %h2 Partners
+            %p This project would not have been possible without the generous support of these partners.
+         .partners-images.col-md-10
+            %h3 Financial Support
+            =link_to image_tag("aandc.jpg", :alt => "AANDC Logo", :id => "aandc-logo", :class => "partners-logo"), "https://www.aadnc-aandc.gc.ca/eng/1100100010002/1100100010021" 
+            =link_to image_tag("citylogo.jpg", :alt => "City of Edmonton Logo", :id => "city-logo", :class => "partners-logo"), "http://www.edmonton.ca/" 
+            =link_to image_tag("eac.jpg", :alt => "Edmonton Arts Council Logo", :id => "eac-logo", :class => "partners-logo"), "http://www.edmontonarts.ca/" 
+            =link_to image_tag("wf.jpg", :alt => "Wellness Fund Logo", :id => "wf-logo", :class => "partners-logo"), "http://www.wellnessfund.ualberta.ca/" 
+            =link_to image_tag("ahrf.jpg", :alt => "Alberta Historical Resources Foundation Logo", :id => "ahrf-logo", :class => "partners-logo"), "http://culture.alberta.ca/heritage-and-museums/foundations/alberta-historical-resources-foundation/" 
+            %h3 Logistical and in-kind support
+            =link_to image_tag("abgov.jpg", :alt => "Alberta Government Logo", :id => "abgov-logo", :class => "partners-logo"), "http://alberta.ca/" 
+            =link_to image_tag("ram.jpg", :alt => "Royal Alberta Museums Logo", :id => "ram-logo", :class => "partners-logo"), "http://www.royalalbertamuseum.ca/" 
 .container-wrap.pane4
    .container
       .row

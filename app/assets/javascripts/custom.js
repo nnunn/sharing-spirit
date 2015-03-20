@@ -25,4 +25,14 @@ $( document ).ready(function() {
     },
      offset: '40%'
   })
+    $('#about').waypoint({
+    handler: function(direction) {
+        if (direction === 'down'){
+          $( ".about-text" ).fadeIn(1000);
+        }else{
+          $( ".about-text" ).fadeOut(1000);
+        }
+    },
+    offset: '60%'
+  })
 });

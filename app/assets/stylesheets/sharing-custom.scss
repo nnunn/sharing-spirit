@@ -164,6 +164,7 @@ h2.video-title{
 	margin-right: 3px;
 }
 .pane2{
+	height: 823px;
 	background:asset-data-url("trans2.jpg") $yellow repeat-x center top;
 }
 .pane3 h2{
@@ -176,7 +177,6 @@ h2.video-title{
 	background-color: $black;
 }
 .pane2, .pane3, .pane4{
-	height: 800px;
 	padding: 50px 0;
 }
 .video-card{
@@ -291,10 +291,53 @@ h2.video-title{
 .add-form .btn{
 	margin-left: 180px;
 }
-.people{
-	width: 90%;
-	float: right;
-	-webkit-filter:invert(1);
-	opacity:0.8;
-	margin-top: -100px;
+.about-text{
+	font-size: 20px;
+	line-height: 35px;
+	display: none;
+}
+.partners-text{
+	font-size: 20px;
+	line-height: 35px;
+	color: #efefef;
+	padding-top: 200px;
+
+}
+.partners-images{
+	background-image:asset-data-url("partners-back.png");
+	background-repeat: no-repeat;
+	background-position: top right;
+	height: 950px;
+	margin-top: -30px;
+}
+.partners-logo{
+	position: absolute;
+}
+#aandc-logo{
+	top:370px;
+	left: 350px;
+}
+#city-logo{
+	top:620px;
+	left: 380px;
+}
+#eac-logo{
+	top:420px;
+	left: 220px;
+}
+#wf-logo{
+	top:220px;
+	left: 360px;
+}
+#ahrf-logo{
+	top:420px;
+	left: 650px;
+}
+#ram-logo{
+	top:670px;
+	left: 380px;
+}
+#abgov-logo{
+	top:440px;
+	left: 400px;
 }
