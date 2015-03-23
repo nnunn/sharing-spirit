@@ -35,4 +35,17 @@ $( document ).ready(function() {
     },
     offset: '60%'
   })
+    $('#partners').waypoint({
+    handler: function(direction) {
+        if (direction === 'down'){
+          $( ".partners-logo, .partners-images h3" ).fadeIn(3000);
+          $( ".partners-text" ).fadeIn(500);
+        }else{
+          $( ".partners-logo, .partners-images h3" ).fadeOut(1000);
+          $( ".partners-text" ).fadeOut(500);
+        }
+    },
+    offset: '60%'
+  })
+
 });

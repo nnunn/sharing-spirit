@@ -297,11 +297,11 @@ h2.video-title{
 	display: none;
 }
 .partners-text{
-	font-size: 20px;
+	font-size: 24px;
 	line-height: 35px;
 	color: #efefef;
 	padding-top: 200px;
-
+	display: none;
 }
 .partners-images{
 	background-image:asset-data-url("partners-back.png");
@@ -310,15 +310,29 @@ h2.video-title{
 	height: 950px;
 	margin-top: -30px;
 }
-.partners-logo{
+.partners-logo, .partners-images h3{
 	position: absolute;
+	display: none;
+}
+.partners-logo{
+	border: 2px solid #fff;
+}
+.partners-logo:hover{
+	border: 2px solid #efefef;
+}
+.partners-images h3{
+	font-size: 17px;
+	z-index: 2000;
+	padding: 3px;
+	color: #efefef;
+	background-color: #666;
 }
 #aandc-logo{
 	top:370px;
 	left: 350px;
 }
 #city-logo{
-	top:620px;
+	top:610px;
 	left: 380px;
 }
 #eac-logo{
@@ -327,7 +341,7 @@ h2.video-title{
 }
 #wf-logo{
 	top:220px;
-	left: 360px;
+	left: 390px;
 }
 #ahrf-logo{
 	top:420px;
@@ -340,4 +354,13 @@ h2.video-title{
 #abgov-logo{
 	top:440px;
 	left: 400px;
+}
+.financial{
+	top:205px;
+	left: 320px;
+}
+.logistical{
+	top:555px;
+	left: 220px;
+	
 }

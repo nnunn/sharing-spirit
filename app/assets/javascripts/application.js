@@ -15,6 +15,7 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require isotope.pkgd.min
-//= require custom
 //= require turbolinks
-//= require_tree .
+//= require jquery.waypoints.min
+//= require jquery.smooth-scroll.min
+//= require custom

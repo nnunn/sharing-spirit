@@ -44,7 +44,8 @@
    .container
       .row
          %a{:class => "anchor", :id => "about"}
-         .col-md-5
+         .col-md-5.med-wheel
+            
          .about-text.col-md-7
             %h2 About Sharing Spirit
             %p 
@@ -58,16 +59,15 @@
       .row
          %a{:class => "anchor", :id => "partners"}
          .partners-text.col-md-2
-            %h2 Partners
             %p This project would not have been possible without the generous support of these partners.
          .partners-images.col-md-10
-            %h3 Financial Support
+            %h3.financial Financial Support
             =link_to image_tag("aandc.jpg", :alt => "AANDC Logo", :id => "aandc-logo", :class => "partners-logo"), "https://www.aadnc-aandc.gc.ca/eng/1100100010002/1100100010021" 
             =link_to image_tag("citylogo.jpg", :alt => "City of Edmonton Logo", :id => "city-logo", :class => "partners-logo"), "http://www.edmonton.ca/" 
             =link_to image_tag("eac.jpg", :alt => "Edmonton Arts Council Logo", :id => "eac-logo", :class => "partners-logo"), "http://www.edmontonarts.ca/" 
             =link_to image_tag("wf.jpg", :alt => "Wellness Fund Logo", :id => "wf-logo", :class => "partners-logo"), "http://www.wellnessfund.ualberta.ca/" 
             =link_to image_tag("ahrf.jpg", :alt => "Alberta Historical Resources Foundation Logo", :id => "ahrf-logo", :class => "partners-logo"), "http://culture.alberta.ca/heritage-and-museums/foundations/alberta-historical-resources-foundation/" 
-            %h3 Logistical and in-kind support
+            %h3.logistical Logistical and in-kind support
             =link_to image_tag("abgov.jpg", :alt => "Alberta Government Logo", :id => "abgov-logo", :class => "partners-logo"), "http://alberta.ca/" 
             =link_to image_tag("ram.jpg", :alt => "Royal Alberta Museums Logo", :id => "ram-logo", :class => "partners-logo"), "http://www.royalalbertamuseum.ca/" 
 .container-wrap.pane4
