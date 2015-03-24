@@ -164,7 +164,7 @@ h2.video-title{
 	margin-right: 3px;
 }
 .pane2{
-	height: 823px;
+	height: 853px;
 	background:asset-data-url("trans2.jpg") $yellow repeat-x center top;
 }
 .pane3 h2{
@@ -240,10 +240,17 @@ h2.video-title{
 	padding: 20px 0;
 }
 #filters a{
-	font-size: 16px;
+	font-size: 22px;
 	color: #fff;
-	padding: 10px;
+	padding: 5px 10px;
 	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.1);
+	margin-right: 5px;
+	font-weight: normal;
+}
+#filters a:hover{
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #efefef;
 }
 .video-info{
 	padding: 30px;
@@ -292,15 +299,18 @@ h2.video-title{
 	margin-left: 180px;
 }
 .about-text{
-	font-size: 20px;
+	font-size: 19px;
 	line-height: 35px;
 	display: none;
+}
+.partner-wrap, .about-wrap{
+	min-height: 200px;
 }
 .partners-text{
 	font-size: 24px;
 	line-height: 35px;
 	color: #efefef;
-	padding-top: 200px;
+	padding-top: 280px;
 	display: none;
 }
 .partners-images{
@@ -326,6 +336,16 @@ h2.video-title{
 	padding: 3px;
 	color: #efefef;
 	background-color: #666;
+}
+.med-wheel{
+	display: none;
+}
+.med-wheel img{
+	padding: 60px 0px 30px 0;
+}
+.med-wheel p{
+	text-align: center;
+	padding: 0 60px;
 }
 #aandc-logo{
 	top:370px;
@@ -362,5 +382,7 @@ h2.video-title{
 .logistical{
 	top:555px;
 	left: 220px;
-	
+}
+.contact-head{
+	color: #fff;
 }

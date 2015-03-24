@@ -25,17 +25,19 @@ $( document ).ready(function() {
     },
      offset: '40%'
   })
-    $('#about').waypoint({
+    $('.pane2').waypoint({
     handler: function(direction) {
         if (direction === 'down'){
+          $( ".med-wheel" ).fadeIn(3000);
           $( ".about-text" ).fadeIn(1000);
         }else{
+         
           $( ".about-text" ).fadeOut(1000);
         }
     },
-    offset: '60%'
+    offset: '100%'
   })
-    $('#partners').waypoint({
+    $('.pane3').waypoint({
     handler: function(direction) {
         if (direction === 'down'){
           $( ".partners-logo, .partners-images h3" ).fadeIn(3000);
@@ -45,7 +47,7 @@ $( document ).ready(function() {
           $( ".partners-text" ).fadeOut(500);
         }
     },
-    offset: '60%'
+    offset: '100%'
   })
 
 });

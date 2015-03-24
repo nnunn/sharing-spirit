@@ -44,9 +44,12 @@
    .container
       .row
          %a{:class => "anchor", :id => "about"}
-         .col-md-5.med-wheel
-            
-         .about-text.col-md-7
+         .col-md-6.about-wrap
+            .med-wheel
+               = image_tag "circle.png", :alt => "Medicine Wheel" 
+               %p
+                  The teachings of the Medicine Wheel informed much of this project. The medicine wheel....
+         .about-text.col-md-6
             %h2 About Sharing Spirit
             %p 
                Sharing Spirit is an oral history and storytelling project that works with Aboriginal peoples of all ages to share knowledge and tell stories through digital filmmaking. The project was started by Edmonton-based filmmaker Jason Gondziola and Cree Elder Francis Whiskeyjack. Through this project, youth interviewed Elders, Knowledge Keepers and artists on a number of subjects and created short documentary films from some of these interviews.
@@ -58,8 +61,9 @@
    .container
       .row
          %a{:class => "anchor", :id => "partners"}
-         .partners-text.col-md-2
-            %p This project would not have been possible without the generous support of these partners.
+         .col-md-2.partner-wrap
+            .partners-text
+               %p This project would not have been possible without the generous support of these partners.
          .partners-images.col-md-10
             %h3.financial Financial Support
             =link_to image_tag("aandc.jpg", :alt => "AANDC Logo", :id => "aandc-logo", :class => "partners-logo"), "https://www.aadnc-aandc.gc.ca/eng/1100100010002/1100100010021" 
@@ -74,4 +78,4 @@
    .container
       .row
          %a{:class => "anchor", :id => "contact"}
-         %h2 Contact
+         %h2.contact-head Contact
