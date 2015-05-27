@@ -22,7 +22,7 @@ a:hover, a:visited, a:link, a:active{
 }
 .mynav{
 	padding: 0;
-	margin-top: 50px;
+	margin-top: 0px;
 }
 .mynav>li{
 	list-style: none;
@@ -73,9 +73,7 @@ a.anchor{
 	visibility: hidden;
 }
 .full-title{
-	border: 2px solid #3a3d48;
-	border-width: 1px 0;
-	margin-top: 120px;
+	margin-top: 0px;
 	padding: 0 5px;
 }
 .logo{
@@ -89,13 +87,12 @@ a.anchor{
 	margin-top: 20px;
 }
 h1{
-	font-size: 90px;
+	font-size: 70px;
 	font-family: 'Playfair Display', serif;
 	color:$red;
-	border-top: 1px solid #3a3d48;
-	padding-top: 30px;
+	padding-top: 10px;
 	text-align: center;
-	margin-top: 5px;
+	margin-top: 0px;
 }
 h1>span{
 	font-style: italic;
@@ -132,12 +129,11 @@ h2.video-title{
 }
 .tagline{
 	margin-top: 0px;
-	font-size: 18px;
-	border-bottom: 1px solid #3a3d48;
-	padding-bottom: 40px;
+	font-size: 16px;
+	padding-bottom: 10px;
 	font-family: 'Playfair Display', serif;
 	text-align: center;
-	margin-bottom: 5px;
+	margin-bottom: 0px;
 }
 .tagline>em{
 	font-size: 35px;
@@ -395,7 +391,29 @@ h2.video-title{
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px){
+	.mynav{
+		padding: 0;
+		margin-top: 50px;
+	}
+	.full-title{
+		border: 2px solid #3a3d48;
+		border-width: 1px 0;
+		margin-top: 120px;
+		padding: 0 5px;
+	}
+	h1{
+		font-size: 90px;
+		border-top: 1px solid #3a3d48;
+		padding-top: 30px;
+		margin-top: 5px;
+	}
 	h1.sm{
 		font-size: 60px;
+	}
+	.tagline{
+		margin-top: 0px;
+		font-size: 18px;
+		border-bottom: 1px solid #3a3d48;
+		padding-bottom: 40px;
 	}
 }
