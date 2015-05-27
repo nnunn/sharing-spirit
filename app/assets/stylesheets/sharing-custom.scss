@@ -101,7 +101,7 @@ h1>span{
 	font-style: italic;
 }
 h1.sm{
-	font-size: 60px;
+	font-size: 20px;
 	border: none;
 	padding: 0;
 	text-align: left;
@@ -392,4 +392,10 @@ h2.video-title{
 	font-size: 22px;
 	padding-left: 0px;
 	line-height: 40px;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px){
+	h1.sm{
+		font-size: 60px;
+	}
 }
