@@ -31,7 +31,7 @@ a:hover, a:visited, a:link, a:active{
 	color: #666;
 	display: block;
 	float: left;
-	margin-right: 20px;
+	margin-left: 20px;
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 16px;
@@ -237,12 +237,12 @@ h2.video-title{
 	padding: 20px 0;
 }
 #filters a{
-	font-size: 22px;
+	font-size: 17px;
 	color: #fff;
-	padding: 5px 10px;
+	padding: 5px 5px;
 	cursor: pointer;
 	background-color: rgba(255, 255, 255, 0.1);
-	margin-right: 5px;
+	margin-left: 5px;
 	font-weight: normal;
 }
 #filters a:hover{
@@ -419,6 +419,12 @@ h2.video-title{
 		margin-right: 35px;
 		font-size: 20px;
 		letter-spacing: 3px;
-		
+		margin-left: 0px;
+	}
+	#filters a{
+		font-size: 22px;
+		color: #fff;
+		padding: 5px 10px;
+		margin-right: 5px;
 	}
 }
