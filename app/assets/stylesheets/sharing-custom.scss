@@ -164,7 +164,7 @@ h2.video-title{
 	margin-right: 3px;
 }
 .pane2{
-	height: 853px;
+	min-height: 853px;
 	background:asset-data-url("trans2.jpg") $yellow repeat-x center top;
 }
 .pane3 h2{
